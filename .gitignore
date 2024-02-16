@@ -1,0 +1,8 @@
+.DS_Store
+.AppleDouble
+.LSDverride
+
+node_modules
+.vs
+
+latest-action.txt
