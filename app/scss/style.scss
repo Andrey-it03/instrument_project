@@ -3,6 +3,9 @@
 @import 'fonts';
 @import 'global';
 
+.section {
+    min-height: 100vh;
+}
 
 .header__top {
     background: $background;
@@ -89,12 +92,14 @@
 
 .menu__link {
     color: #fff;
+    transition: 0.3s;
 }
-
+.menu__link:hover{
+    color: $accent;
+}
 .menu__item+.menu__item {
     margin-left: 30px;
 }
-
 .social-list {
     display: flex;
 }
@@ -170,4 +175,134 @@
 
 .footer__social-item+.footer__social-item {
     margin-left: 30px;
+}
+
+.banner {
+    background-color: $background;
+}
+
+.banner__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    max-height: 540px
+}
+
+.banner__item-main {
+    max-width: 640px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.banner__main-title {
+    position: absolute;
+    width: 560px;
+    font-size: 38px;
+    line-height: 48px;
+    top: 0;
+    padding: 0 30px;
+    color: #fff;
+}
+
+.banner__item-main img {
+    width: 610px;
+    min-height: 480px;
+    position: relative;
+}
+
+.banner__arrow {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: #000;
+    bottom: 4.8px;
+    border-top-right-radius: 6px;
+    transition: 0.3s;
+
+}
+
+.banner__link:hover {
+    .banner__arrow {
+        background-color: $accent;
+    }
+}
+
+.banner__arrow:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/icon/arrow-right.svg');
+    top: 15px;
+    left: 15px;
+}
+
+.banner__link-catalog {
+    position: absolute;
+    text-transform: uppercase;
+    top: 300px;
+    left: 20px;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: $accent;
+    border-radius: 5px;
+}
+
+.banner__item-medium {
+    max-width: 310px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.banner__item-medium img {
+    min-height: 480px;
+    width: 297px;
+}
+
+.banner__medium-title {
+    position: absolute;
+    top: 0;
+    padding-left: 15px;
+    color: #fff;
+
+}
+
+.banner__item-small {
+    max-width: 310px;
+}
+
+.banner__small-one {
+    position: relative;
+}
+
+.banner__small-one img {
+    width: 297px;
+    padding-bottom: 14px;
+    min-height: 237px;
+}
+
+.small-one {
+    bottom: 18.7px;
+}
+
+.banner__one-title {
+    position: absolute;
+    top: 0;
+    padding-left: 15px;
+    color: #fff;
+}
+.banner__small-two{
+    position: relative;
+}
+.banner__two-title{
+    position:absolute;
+    top:0;
+    padding-left: 15px;
+    color: #fff;
+}
+
+.banner__small-two img {
+    width: 297px;
+    min-height: 237px;
 }
