@@ -1,0 +1,20 @@
+$background: #212526;
+$accent: #F05A00;
+$black: #000;
+$grey: #DEDBDB;
+$green: #126935;
+$blue: #180A3E;
+$subtitle: #373737;
+
+@mixin f450{
+    font-family: 'Prosto One-Regular';
+    font-weight: 400;
+}
+@mixin f400{
+    font-family: 'Raleway-Regular';
+    font-weight: 400;
+}
+@mixin f500{
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+}

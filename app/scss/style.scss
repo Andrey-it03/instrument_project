@@ -2,3 +2,172 @@
 @import 'libs';
 @import 'fonts';
 @import 'global';
+
+
+.header__top {
+    background: $background;
+    color: #fff;
+    min-height: 85px;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__work-time span {
+    padding-left: 10px;
+}
+
+.header__user-list {
+    display: flex;
+}
+
+.header__phone {
+    padding-bottom: 13px;
+    color: #fff;
+}
+
+.header__phone-text {
+    font-size: 16px;
+    color: $accent;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+.header__sum-text {
+    margin: 10px 0;
+}
+
+.heder__user-link {
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.cart__num {
+    position: absolute;
+    color: #fff;
+    top: -6px;
+    right: -8px;
+    background-color: #F05A00;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 12px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.header__user-item {
+    padding: 25px 28px;
+    transition: 0.3s;
+}
+
+.header__user-item:hover {
+    background: $accent;
+}
+
+.header__bottom {
+    background-color: $black;
+    color: #fff;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__link {
+    color: #fff;
+}
+
+.menu__item+.menu__item {
+    margin-left: 30px;
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-list__item+.social-list__item {
+    margin-left: 15px;
+}
+
+.header__search {
+    background-color: #fff;
+    position: relative;
+}
+
+.header__search-form {
+    min-width: 300px;
+    width: 100%;
+}
+
+.header__search-input {
+    border: none;
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.header__search-btn {
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.footer {
+    background-color: $background;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.footer__item {
+    width: 220px;
+    padding-right: 15px;
+}
+
+.footer__list-item a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer__useragreement {
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer__telephon {
+    margin-bottom: 10px;
+    margin-left: 10px
+}
+
+.footer__social {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.footer__social-item+.footer__social-item {
+    margin-left: 30px;
+}
