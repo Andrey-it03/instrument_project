@@ -512,6 +512,14 @@
     padding: 0;
     z-index: 5;
 }
+.brend--slide-prev{
+    top: 20%;
+    left: -70px;
+}
+.brend--slide-next{
+    top: 20%;
+    right: -65px;
+}
 
 .product-section__slider-btn {
     padding: 10px 16px;
@@ -523,4 +531,12 @@
     &:hover {
         background-color: $accent;
     }
+}
+.brend{
+    padding: 35px 0 40px;
+    background-color: $background;
+    margin-bottom:20px;
+}
+.brend__title{
+    color: #fff;
 }
