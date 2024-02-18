@@ -512,11 +512,13 @@
     padding: 0;
     z-index: 5;
 }
-.brend--slide-prev{
+
+.brend--slide-prev {
     top: 20%;
     left: -70px;
 }
-.brend--slide-next{
+
+.brend--slide-next {
     top: 20%;
     right: -65px;
 }
@@ -532,11 +534,41 @@
         background-color: $accent;
     }
 }
-.brend{
+
+.brend {
     padding: 35px 0 40px;
     background-color: $background;
-    margin-bottom:20px;
 }
-.brend__title{
+
+.brend__title {
     color: #fff;
+}
+
+.aboutus {
+    padding: 80px 0;
+}
+
+.aboutus__img {
+    max-width: 640px;
+    margin-right: 120px;
+}
+
+.aboutus__inner {
+    display: flex;
+}
+
+.aboutus__title {
+    margin: 0;
+}
+
+.aboutus__text {
+    font-size: 16px;
+}
+
+.aboutus__link {
+    color: #fff;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: $background;
+    border-radius: 5px;
 }

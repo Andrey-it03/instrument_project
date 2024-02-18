@@ -462,6 +462,10 @@ body {
   padding: 0 10px;
 }
 
+button {
+  cursor: pointer;
+}
+
 .section {
   min-height: 100vh;
 }
@@ -991,9 +995,37 @@ body {
 .brend {
   padding: 35px 0 40px;
   background-color: #212526;
-  margin-bottom: 20px;
 }
 
 .brend__title {
   color: #fff;
+}
+
+.aboutus {
+  padding: 80px 0;
+}
+
+.aboutus__img {
+  max-width: 640px;
+  margin-right: 120px;
+}
+
+.aboutus__inner {
+  display: flex;
+}
+
+.aboutus__title {
+  margin: 0;
+}
+
+.aboutus__text {
+  font-size: 16px;
+}
+
+.aboutus__link {
+  color: #fff;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #212526;
+  border-radius: 5px;
 }
