@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import '../../node_modules/slick-carousel/slick/slick-theme.css';
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -308,6 +309,99 @@ template {
   display: none;
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 @font-face {
   font-family: "Prosto One-Regular", sans-serif;
   src: url("../fonts/ProstoOne-Regular.woff2") format("woff2"), url("../fonts/ProstoOne-Regular.woff") format("woff");
@@ -424,6 +518,7 @@ body {
   height: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   line-height: 12px;
   border-radius: 50%;
   font-size: 16px;
@@ -596,7 +691,7 @@ body {
   position: absolute;
   width: 24px;
   height: 24px;
-  background-image: url("../images/icon/arrow-right.svg");
+  background-image: url("../images/icon/banner-arrow.svg");
   top: 15px;
   left: 15px;
 }
@@ -679,15 +774,18 @@ body {
   padding: 80px 0;
 }
 
-.product__inner {
-  display: flex;
-  justify-content: space-between;
-}
-
 .product__item {
   max-width: 310px;
   height: 340px;
   position: relative;
+}
+
+.product__items {
+  margin-top: 70px;
+}
+
+.product__items:first-child {
+  margin-top: 0;
 }
 
 .product__compare {
@@ -784,6 +882,17 @@ body {
   left: 0;
 }
 
+.product__one--action::before {
+  content: "Акция";
+  position: absolute;
+  padding: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #F05A00;
+  top: 0;
+  left: 0;
+}
+
 .product__one img {
   padding: 10px 50px;
   padding-top: 30px;
@@ -836,4 +945,35 @@ body {
 .product__slide1 {
   display: flex;
   justify-content: space-between;
+}
+
+.product-section__slider-btnprev {
+  position: absolute;
+  top: 40%;
+  left: -60px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+.product-section__slider-btnnext {
+  position: absolute;
+  top: 40%;
+  right: -55px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+.product-section__slider-btn {
+  padding: 10px 16px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.product-section__slider-btn:hover {
+  background-color: #F05A00;
 }
