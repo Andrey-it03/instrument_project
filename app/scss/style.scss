@@ -524,7 +524,7 @@
 }
 
 .product-section__slider-btn {
-    padding: 10px 16px;
+    padding: 10px 17px;
     border-radius: 50%;
     border: none;
     background-color: #fff;
@@ -571,4 +571,94 @@
     padding: 15px 30px;
     background-color: $background;
     border-radius: 5px;
+}
+
+
+.tab__top {
+    background-color: $black;
+}
+
+.tab__slide-content {
+    padding-top: 55px;
+    padding-bottom: 25px;
+    background-color: $background;
+}
+
+.products__tabs {
+    padding: 20px 0;
+}
+
+.products__tab {
+    color: #8A8A8A;
+    transition: 0.3s;
+
+    &+& {
+        margin-left: 50px;
+    }
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.tab--active {
+    color: #fff;
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content--active {
+    display: block;
+}
+
+.relevance__link {
+    color: $accent;
+    font-size: 16px;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.news__inner {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__info {
+    padding-right: 30px;
+}
+
+.news__info-text {
+    width: 390px;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.news__info-link {
+    background-color: $accent;
+    margin-top: 10px;
+}
+
+.news__events {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news__events-subtitle {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.news__events-item {
+    margin-bottom: 20px;
+    max-width: 420px;
+}
+
+.news__events-date {
+    font-size: 16px;
 }

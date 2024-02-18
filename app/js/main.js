@@ -10,7 +10,7 @@ $(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 2000,
         prevArrow: '<button class="product-section__slider-btn product-section__slider-btnprev brend--slide-prev"><img src="../images/icon/left-arrow.svg" alt=""></button>',
         nextArrow: '<button class="product-section__slider-btn product-section__slider-btnnext brend--slide-next"><img src="../images/icon/right-arrow.svg" alt=""></button>'
     });
@@ -25,5 +25,14 @@ $(function () {
         $(this).toggleClass('product__cart--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
     });
 
+    $('.tab').on('click', function (e) {
+        e.preventDefault(); //отключение ссылок
+
+        $('.tab').removeClass('tab--active'); // удаление 2 класса
+        $('.tabs-content').removeClass('tabs-content--active');
+
+        $(this).addClass('tab--active'); // добавление класса при клике
+        $($(this).attr('href')).addClass('tabs-content--active'); // добавление класса по id
+    })
 });
 
