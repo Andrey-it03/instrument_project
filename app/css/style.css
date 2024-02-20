@@ -1188,8 +1188,12 @@ button {
   bottom: 2px;
 }
 
-.breadcrumbs__list-item:first-child a {
+.breadcrumbs__list-item a {
   color: #8A8A8A;
+}
+
+.breadcrumbs__list-item:last-child a {
+  color: #000;
 }
 
 .breadcrumbs__list-item:last-child::after {
