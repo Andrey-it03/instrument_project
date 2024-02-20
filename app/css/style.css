@@ -549,6 +549,26 @@ button {
   min-height: 90px;
 }
 
+.header__menu-catalog {
+  padding: 15px 5px 15px 55px;
+  border: 1px solid #000;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.header__menu-catalog:hover {
+  border: 1px solid #F05A00;
+}
+.header__menu-catalog::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 16px;
+  top: 22px;
+  left: 10px;
+  background-image: url("../images/icon/burger.svg");
+}
+
 .menu__list {
   display: flex;
 }
@@ -782,6 +802,9 @@ button {
   max-width: 310px;
   height: 340px;
   position: relative;
+}
+.product__item:hover {
+  box-shadow: 0px 5px 10px 3px rgba(34, 60, 80, 0.2);
 }
 
 .product__items {
@@ -1028,6 +1051,10 @@ button {
   padding: 15px 30px;
   background-color: #212526;
   border-radius: 5px;
+  transition: 0.3s;
+}
+.aboutus__link:hover {
+  background-color: #F05A00;
 }
 
 .tab__top {
@@ -1093,8 +1120,15 @@ button {
 }
 
 .news__info-link {
-  background-color: #F05A00;
+  color: #fff;
   margin-top: 10px;
+  padding: 15px 30px;
+  background-color: #212526;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.news__info-link:hover {
+  background-color: #F05A00;
 }
 
 .news__events {

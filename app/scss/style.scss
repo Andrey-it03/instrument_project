@@ -86,6 +86,29 @@
     min-height: 90px;
 }
 
+.header__menu-catalog {
+    padding: 15px 5px 15px 55px;
+    border: 1px solid $black;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        border: 1px solid $accent;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 16px;
+        top: 22px;
+        left: 10px;
+        background-image: url('../images/icon/burger.svg');
+    }
+}
+
+
 .menu__list {
     display: flex;
 }
@@ -323,6 +346,11 @@
     max-width: 310px;
     height: 340px;
     position: relative;
+
+    &:hover {
+        box-shadow: 0px 5px 10px 3px rgba(34, 60, 80, 0.2);
+    }
+
 }
 
 .product__items {
@@ -414,7 +442,9 @@
     height: 340px;
     background-color: #fff;
     position: relative;
+
 }
+
 
 .product__one--new::before {
     content: 'Новинка';
@@ -571,6 +601,11 @@
     padding: 15px 30px;
     background-color: $background;
     border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $accent;
+    }
 }
 
 
@@ -639,8 +674,16 @@
 }
 
 .news__info-link {
-    background-color: $accent;
+    color: #fff;
     margin-top: 10px;
+    padding: 15px 30px;
+    background-color: $background;
+    border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $accent;
+    }
 }
 
 .news__events {
