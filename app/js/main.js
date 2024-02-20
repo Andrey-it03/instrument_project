@@ -34,5 +34,9 @@ $(function () {
         $(this).addClass('tab--active'); // добавление класса при клике
         $($(this).attr('href')).addClass('tabs-content--active'); // добавление класса по id
     })
+
+
+
+
 });
 
