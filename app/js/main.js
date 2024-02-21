@@ -36,7 +36,36 @@ $(function () {
     })
 
 
+    // $('.filter-btngrid').on('click', function () {
+    //     $(this).addClass('filter__button--active');
+    //     $('.filter-btnline').removeClass('filter__button--active');
 
+
+
+    // });
+
+    // $('.filter-btnline').on('click', function () {
+    //     $(this).addClass('filter__button--active');
+    //     $('.filter-btngrid').removeClass('filter__button--active');
+
+    // });
+
+
+    $('.filter-btngrid').on('click', function () {
+        $(this).addClass('filter__button--active');
+        $('.filter-btnline').removeClass('filter__button--active');
+        $('.product__item').removeClass('filter__line');
+        
+
+
+
+    });
+
+    $('.filter-btnline').on('click', function () {
+        $(this).addClass('filter__button--active');
+        $('.filter-btngrid').removeClass('filter__button--active');
+        $('.product__item').addClass('filter__line');
+    });
 
 });
 
