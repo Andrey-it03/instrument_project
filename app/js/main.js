@@ -51,7 +51,19 @@ $(function () {
 
         $(this).addClass('tab--active'); // добавление класса при клике
         $($(this).attr('href')).addClass('tabs-content--active'); // добавление класса по id
-    })
+    });
+
+    $('.product__tab').on('click', function (e) {
+        e.preventDefault(); //отключение ссылок
+
+        $('.product__tab').removeClass('product__tab--active'); // удаление 2 класса
+        $('.product-one__content').removeClass('product-one__content--active');
+
+        $(this).addClass('product__tab--active'); // добавление класса при клике
+        $($(this).attr('href')).addClass('product-one__content--active'); // добавление класса по id
+    });
+
+    
 
 
     $('.filter-btngrid').on('click', function () {
