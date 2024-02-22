@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrument-grad</title>
+    <link href="https: //fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="../images/logo.png" alt="">
+                    </a>
+                    <div class="header__info">
+                        <p class="header__work-time">
+                            Время работы:<span>10:00-20:00</span>
+                        </p>
+                    </div>
+                    <div class="header__telephon">
+
+                        <div class="header__telephon-tell">
+                            <a class="header__phone" href="tel:74951203214">+7 495 120 32 14</a>
+                        </div>
+                        <div class="header__telephon-call">
+                            <a class="header__phone-text" href="#">Заказать звонок</a>
+                        </div>
+                    </div>
+                    <div class="header__user">
+                        <ul class="header__user-list">
+                            <li class="header__user-item">
+                                <a class="heder__user-link" href="#">
+                                    <img src="../images/icon/heart1.svg" alt="">
+                                    <div class="cart__num">1</div>
+                                </a>
+                            </li>
+                            <li class="header__user-item">
+                                <a class="heder__user-link" href="#">
+                                    <img src="../images/icon/compare.svg" alt="">
+                                    <div class="cart__num">1</div>
+                                </a>
+                            </li>
+                            <li class="header__user-item">
+                                <a class="heder__user-link" href="#">
+                                    <img src="../images/icon/account.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__user-item">
+                                <a class="heder__user-link" href="#">
+                                    <img src="../images/icon/cart.svg" alt="">
+                                    <div class="cart__num">1</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__menu">
+                    <div class="header__menu-catalog">
+                        Каталог товаров
+                    </div>
+                    <nuv class="menu">
+                        <ul class="menu__list">
+
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">О компании</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Акции</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Хиты сезона</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Новинки</a>
+                            </li>
+                        </ul>
+                    </nuv>
+                    <div class="header__menu-social">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="#">
+                                    <img src="../images/icon/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#">
+                                    <img src="../images/icon/wk.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__search">
+                        <form class="header__search-form">
+                            <input class="header__search-input" type="text" placeholder="Поиск по каталогу" required>
+                            <button class="header__search-btn" type="submit">
+                                <img src="../images/icon/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                        Избранное
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="favofites">
+        <div class="container">
+            <h2 class="filter__title">
+                Избранное
+            </h2>
+            <div class="filter__inner-inner">
+                <div class="filter__inner-aside">
+                    <span>15</span>товаров
+                </div>
+                <div class="filter__inner">
+
+                    <div class="filter__sort">
+                        <span class="filter__btn-span">Сортировать:</span>
+                        <select class="filter__option ">
+                            <option class="filter__opticion-style">
+                                По популярности
+                            </option>
+                            <option>
+                                По возрастанию цены
+                            </option>
+                            <option>
+                                По убыванию цены
+                            </option>
+                            <option>
+                                Сначала новые
+                            </option>
+                            <option>
+                                От А до Я
+                            </option>
+                            <option>
+                                От Я до А
+                            </option>
+                        </select>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="favorites__inner">
+                <div class="product__item product__item-favorites">
+                    <button class="product__compare ">
+                    </button>
+                    <button class="product__heart product__heart--active">
+                    </button>
+                    <button class="product__cart">
+                    </button>
+                    <a class="product__one product__one--new " href="#">
+                        <img src="../images/product/product1.png" alt="">
+                        <h4 class="product__one-title">
+                            Эмаль Condor ПФ-115 жёлтая 1,8 кг
+                        </h4>
+                        <div class="product__price">
+                            <div class="product__price-new">
+                                500₽
+                            </div>
+                            <div class="product__price-old">
+                                720₽
+                            </div>
+                            <div class="product__notify">
+                                в наличие
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product__item product__item-favorites">
+                    <button class="product__compare ">
+                    </button>
+                    <button class="product__heart product__heart--active">
+                    </button>
+                    <button class="product__cart">
+                    </button>
+                    <a class="product__one product__one--new " href="#">
+                        <img src="../images/product/product1.png" alt="">
+                        <h4 class="product__one-title">
+                            Эмаль Condor ПФ-115 жёлтая 1,8 кг
+                        </h4>
+                        <div class="product__price">
+                            <div class="product__price-new">
+                                500₽
+                            </div>
+                            <div class="product__price-old">
+                                720₽
+                            </div>
+                            <div class="product__notify">
+                                в наличие
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product__item product__item-favorites">
+                    <button class="product__compare ">
+                    </button>
+                    <button class="product__heart product__heart--active">
+                    </button>
+                    <button class="product__cart">
+                    </button>
+                    <a class="product__one product__one--new " href="#">
+                        <img src="../images/product/product1.png" alt="">
+                        <h4 class="product__one-title">
+                            Эмаль Condor ПФ-115 жёлтая 1,8 кг
+                        </h4>
+                        <div class="product__price">
+                            <div class="product__price-new">
+                                500₽
+                            </div>
+                            <div class="product__price-old">
+                                720₽
+                            </div>
+                            <div class="product__notify">
+                                в наличие
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product__item product__item-favorites">
+                    <button class="product__compare ">
+                    </button>
+                    <button class="product__heart product__heart--active">
+                    </button>
+                    <button class="product__cart">
+                    </button>
+                    <a class="product__one product__one--new " href="#">
+                        <img src="../images/product/product1.png" alt="">
+                        <h4 class="product__one-title">
+                            Эмаль Condor ПФ-115 жёлтая 1,8 кг
+                        </h4>
+                        <div class="product__price">
+                            <div class="product__price-new">
+                                500₽
+                            </div>
+                            <div class="product__price-old">
+                                720₽
+                            </div>
+                            <div class="product__notify">
+                                в наличие
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product__item product__item-favorites">
+                    <button class="product__compare ">
+                    </button>
+                    <button class="product__heart product__heart--active">
+                    </button>
+                    <button class="product__cart">
+                    </button>
+                    <a class="product__one product__one--new " href="#">
+                        <img src="../images/product/product1.png" alt="">
+                        <h4 class="product__one-title">
+                            Эмаль Condor ПФ-115 жёлтая 1,8 кг
+                        </h4>
+                        <div class="product__price">
+                            <div class="product__price-new">
+                                500₽
+                            </div>
+                            <div class="product__price-old">
+                                720₽
+                            </div>
+                            <div class="product__notify">
+                                в наличие
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            
+        </div>
+    </section>
+
+    <div class="pagination">
+        <ul class="pagination-list">
+            <li class="pagination-list__item pagination-list__item--active">
+                <a href="#">
+                    1
+                </a>
+            </li>
+            <li class="pagination-list__item">
+                <a href="#">
+                    2
+                </a>
+            </li>
+            <li class="pagination-list__item">
+                <a href="#">
+                    3
+                </a>
+            </li>
+            <li class="pagination-list__item">
+                <a href="#">
+                    4
+                </a>
+            </li>
+            <li class="pagination-list__item">
+                <a href="#">
+                    5
+                </a>
+            </li>
+            <li class="pagination-list__item pagination-list__item-dots">
+                <a href="#">
+                    <span>...</span>
+                </a>
+            </li>
+            <li class="pagination-list__item">
+                <a href="#">
+                    11
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Малярные товары
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Электрооборудование </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Спецодежда </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Для дома и дачи
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Сезонное
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Инструмент
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Новинки
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Хиты сезона
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Распродажи
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <a class="logo footer-logo" href="#">
+                        <img class="logo__img" src="../images/logo.png" alt="">
+                    </a>
+                    <div class="footer__telephon">
+                        <a class="header__phone footer__list-link" href="tel:74951203214">+7 495 120 32 14</a>
+                        <a class="header__phone footer__list-link" href="tel:74951203213">+7 495 120 32 13</a>
+                    </div>
+                    <ul class="social-list footer__social">
+                        <li class="social-list__item footer__social-item">
+                            <a href="#">
+                                <img src="../images/icon/instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item footer__social-item">
+                            <a href="#">
+                                <img src="../images/icon/wk.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="footer__useragreement footer__list-link" href="#">
+                        Соглашение пользователя
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/main.min.js"></script>
+
+</body>
+
+</html>

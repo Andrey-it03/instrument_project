@@ -1112,3 +1112,18 @@
 .filter__aside-more a {
     color: #000;
 }
+
+.filter__inner-aside {
+    font-weight: 700;
+    & span {
+        margin-right: 8px;
+    }
+}
+.favorites__inner{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product__item-favorites{
+    margin-bottom: 15px;
+}
