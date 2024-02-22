@@ -36,28 +36,10 @@ $(function () {
     })
 
 
-    // $('.filter-btngrid').on('click', function () {
-    //     $(this).addClass('filter__button--active');
-    //     $('.filter-btnline').removeClass('filter__button--active');
-
-
-
-    // });
-
-    // $('.filter-btnline').on('click', function () {
-    //     $(this).addClass('filter__button--active');
-    //     $('.filter-btngrid').removeClass('filter__button--active');
-
-    // });
-
-
     $('.filter-btngrid').on('click', function () {
         $(this).addClass('filter__button--active');
         $('.filter-btnline').removeClass('filter__button--active');
         $('.product__item').removeClass('filter__line');
-        
-
-
 
     });
 
@@ -66,6 +48,15 @@ $(function () {
         $('.filter-btngrid').removeClass('filter__button--active');
         $('.product__item').addClass('filter__line');
     });
+
+
+
+    $('.filter__aside-item').on('click', function () {
+        $('.filter__aside-drop ').toggleClass('filter__aside-drop--active');
+        $('.filter__aside-title ').toggleClass('filter__aside-title--active');
+    });
+
+
 
 });
 

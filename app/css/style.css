@@ -2152,8 +2152,35 @@ button {
 .filter__inner-aside {
   max-width: 300px;
   width: 100%;
-  margin-right: 20px;
-  background-color: #000;
+  margin-right: 15px;
+}
+
+.filter__aside .filter__aside-item {
+  background-color: #212526;
+}
+.filter__aside .filter__aside-title {
+  margin: 0;
+  color: #fff;
+  padding: 22px 20px;
+  position: relative;
+  border-bottom: 1px solid #D9D9D9;
+  transition: 0.3s;
+}
+.filter__aside .filter__aside-title:hover, .filter__aside .filter__aside-title:active {
+  background-color: #F05A00;
+}
+.filter__aside .filter__aside-title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icon/filter-aside-arrow.svg");
+  width: 9px;
+  height: 16px;
+  top: 26px;
+  right: 30px;
+}
+
+.filter__aside-main {
+  margin-top: 30px;
 }
 
 .filter__inner-aside {
@@ -2284,4 +2311,33 @@ button {
 }
 .product__item.filter__line .filter__line-notify {
   margin-left: 15px;
+}
+
+.filter__wrapper {
+  position: relative;
+}
+
+.filter__aside-drop {
+  position: absolute;
+  width: 900px;
+  height: 400px;
+  background-color: #fff;
+  z-index: 100;
+  top: 0;
+  left: 300px;
+  opacity: 0;
+}
+
+.filter__aside-drop--active {
+  opacity: 1;
+}
+
+.filter__aside-more {
+  height: 360px;
+  width: 310px;
+  margin: 20px 20px;
+}
+
+.filter__aside-more a {
+  color: #000;
 }

@@ -891,8 +891,42 @@
 .filter__inner-aside {
     max-width: 300px;
     width: 100%;
-    margin-right: 20px;
-    background-color: #000;
+    margin-right: 15px;
+
+}
+
+.filter__aside {
+    .filter__aside-item {
+        background-color: $background;
+    }
+    .filter__aside-title{
+        margin: 0;
+        color: #fff;
+        padding: 22px 20px;
+        position: relative;
+        border-bottom: 1px solid #D9D9D9;
+        transition: 0.3s;
+
+        &:hover,
+        &:active {
+            background-color: $accent;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../images/icon/filter-aside-arrow.svg');
+            width: 9px;
+            height: 16px;
+            top: 26px;
+            right: 30px;
+        }
+
+    }
+}
+
+.filter__aside-main {
+    margin-top: 30px;
 }
 
 .filter__inner-aside {
@@ -965,7 +999,7 @@
         max-width: 970px;
         width: 100%;
         max-height: 170px;
-        margin-bottom:10px;
+        margin-bottom: 10px;
         background-color: #fff;
 
         .filter__grid-inner {
@@ -1016,30 +1050,60 @@
             margin: 0;
             width: 550px;
         }
-        .filter__line-text{
-            width:700px;
+
+        .filter__line-text {
+            width: 700px;
         }
-        .filter__line-wrapper{
-            display:flex;
+
+        .filter__line-wrapper {
+            display: flex;
         }
-        .filter__line-price{
-            display:flex;
+
+        .filter__line-price {
+            display: flex;
             justify-content: space-between;
             margin-top: 10px;
             padding: 0;
         }
-        .filter__line-price-all{
-            display:flex;
+
+        .filter__line-price-all {
+            display: flex;
         }
-        .filter__line-price-old{
-            margin:0;
+
+        .filter__line-price-old {
+            margin: 0;
         }
-        .filter__line-notify{
+
+        .filter__line-notify {
             margin-left: 15px;
         }
     }
 }
 
+.filter__wrapper {
+    position: relative;
+}
 
+.filter__aside-drop {
+    position: absolute;
+    width: 900px;
+    height: 400px;
+    background-color: #fff;
+    z-index: 100;
+    top: 0;
+    left: 300px;
+    opacity: 0;
+}
 
+.filter__aside-drop--active {
+    opacity: 1;
+}
 
+.filter__aside-more {
+    height: 360px;
+    width: 310px;
+    margin: 20px 20px;
+}
+.filter__aside-more a{
+    color: #000;
+}
