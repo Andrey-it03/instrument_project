@@ -479,6 +479,8 @@
     padding-left: 20px;
     line-height: 16px;
     color: #000;
+    line-height: 40px;
+    width: 550px;
 }
 
 .product__price {
@@ -1134,12 +1136,13 @@
 
 .product-one__product {
     background-color: #fff;
+    margin-bottom: 100px;
 }
 
 .product-one__inner-slide {
     max-width: 650px;
     width: 100%;
-    background-color: #000;
+    padding-bottom: 50px;
 }
 
 .product-one__inner {
@@ -1164,4 +1167,95 @@
 .product-one__inner-text {
     font-size: 16px;
     width: 400px;
+    padding-bottom: 20px;
+}
+
+.produc-one__price {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.product-one__price-new {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.product-one__user-active {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.product-one__cart {
+    border: none;
+    color: #fff;
+    border: 1px solid #000;
+    background-color: $background;
+    padding: 10px 25px;
+    border-radius: 5px;
+    position: relative;
+
+    &.product-one__cart--active {
+        background-color: $accent;
+        border: 1px solid $accent;
+    }
+}
+
+.product-one__compare {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url('../images/icon/product-one-compare.svg');
+        width: 35px;
+        height: 35px;
+        background-repeat: no-repeat;
+        top: -2px;
+        left: 0;
+    }
+
+    &.product-one__compare--active:before {
+        background-image: url('../images/icon/product-one-compare--active.svg');
+    }
+}
+
+.product-one__heart {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url('../images/icon/product-one-heart.svg');
+        width: 35px;
+        height: 35px;
+        background-repeat: no-repeat;
+        top: 2px;
+        left: 0;
+    }
+
+    &.product-one__heart--active:before {
+        background-image: url('../images/icon/product-one-heart--active.svg');
+    }
+}
+
+.product-one__product-for-big img {
+    padding: 70px 140px;
+}
+.product-one__product-for-small img{
+    width:90px;
+    height:90px;
+}
+.product-one__inner{
+    margin-bottom:5px;
 }

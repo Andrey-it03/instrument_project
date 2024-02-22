@@ -1,4 +1,21 @@
 $(function () {
+
+    $('.slider-for').slick({
+        asNavFor: '.slider-nav',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+       draggable: false,
+
+     });
+    $('.slider-nav').slick({
+        asNavFor: '.slider-for',
+        focusOnSelect:true,
+       slidesToShow: 5,
+       slidesToScroll: 1,
+       draggable: false,
+     });
+
+
     $('.product__inner-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -15,6 +32,7 @@ $(function () {
         nextArrow: '<button class="product-section__slider-btn product-section__slider-btnnext brend--slide-next"><img src="../images/icon/right-arrow.svg" alt=""></button>'
     });
 
+    
     $('.product__compare ').on('click', function () { // при нажатии
         $(this).toggleClass('product__compare--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
     });
@@ -49,13 +67,23 @@ $(function () {
         $('.product__item').addClass('filter__line');
     });
 
-
-
     $('.filter__aside-item').on('click', function () {
         $('.filter__aside-drop ').toggleClass('filter__aside-drop--active');
     });
 
+    $('.product-one__compare ').on('click', function () { // при нажатии
+        $(this).toggleClass('product-one__compare--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
+    });
 
+    $('.product-one__heart').on('click', function () { // при нажатии
+        $(this).toggleClass('product-one__heart--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
+    });
+
+    $('.product-one__cart ').on('click', function () { // при нажатии
+        $(this).toggleClass('product-one__cart--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
+    });
+
+   
 
 });
 
