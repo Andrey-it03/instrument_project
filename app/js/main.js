@@ -53,7 +53,6 @@ $(function () {
 
     $('.filter__aside-item').on('click', function () {
         $('.filter__aside-drop ').toggleClass('filter__aside-drop--active');
-        $('.filter__aside-title ').toggleClass('filter__aside-title--active');
     });
 
 

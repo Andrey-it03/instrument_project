@@ -898,19 +898,23 @@
 .filter__aside {
     .filter__aside-item {
         background-color: $background;
-    }
-    .filter__aside-title{
-        margin: 0;
-        color: #fff;
-        padding: 22px 20px;
-        position: relative;
+        width: 300px;
+        border: none;
         border-bottom: 1px solid #D9D9D9;
         transition: 0.3s;
 
-        &:hover,
-        &:active {
+        &:hover {
             background-color: $accent;
         }
+    }
+
+    .filter__aside-title {
+        margin: 0;
+        color: #fff;
+        padding: 22px 10px;
+        position: relative;
+        transition: 0.3s;
+
 
         &::after {
             content: '';
@@ -1104,6 +1108,7 @@
     width: 310px;
     margin: 20px 20px;
 }
-.filter__aside-more a{
+
+.filter__aside-more a {
     color: #000;
 }
