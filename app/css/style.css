@@ -2598,9 +2598,8 @@ button {
 }
 
 .contact__info-wrapper {
-  background-color: #fff;
   width: 340px;
-  height: 150px;
+  height: 140px;
   padding-left: 20px;
   margin-bottom: 20px;
   transition: 0.3s;
@@ -2626,10 +2625,16 @@ button {
 
 .contact__street,
 .contact__phone {
-  color: #000;
+  color: #8A8A8A;
   font-weight: 700;
 }
 
 .contact__tab--active {
+  background-color: #fff;
   box-shadow: 5px 5px 8px 0px rgba(106, 42, 151, 0.2);
+}
+.contact__tab--active .contact__street,
+.contact__tab--active .contact__phone {
+  color: #000;
+  font-weight: 700;
 }
