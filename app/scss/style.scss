@@ -1328,21 +1328,89 @@
 .brends__inner {
     margin: 40px 0 80px;
 }
+
 .brends__item {
     max-width: 320px;
     max-height: 160px;
     background-color: #fff;
     border: 2px solid $background-white;
     transition: 0.3s;
-    &:hover{
-        transform:scale(1.1);
+
+    &:hover {
+        transform: scale(1.1);
     }
 }
-.brends__inner{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
+
+.brends__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 .brends__item img {
     padding: 40px 60px;
+}
+
+
+.contact__inner {
+    display: flex;
+    margin: 50px 0 100px;
+}
+
+.contact__map {
+    width: 1000px;
+    height: 600px;
+    margin-right: 50px;
+    display: none;
+}
+
+.contact__info {
+    width: 340px;
+    height: 400px;
+}
+
+.contact__map--active {
+    display: initial;
+}
+
+.contact__inner {
+    display: flex;
+}
+
+.contact__info-wrapper {
+    background-color: #fff;
+    width: 340px;
+    height: 150px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+
+.contact__tab,
+.contact__phone {
+    color: #8A8A8A;
+}
+
+.contact__street {
+    margin: 10px 0;
+    padding-top: 20px;
+}
+
+.contact__city {
+    margin: 10px 0 20px;
+}
+
+.contact__tab {
+    width: 100%;
+}
+
+.contact__street,
+.contact__phone {
+    color: #000;
+    font-weight: 700;
+}
+
+.contact__tab--active {
+    box-shadow: 5px 5px 8px 0px rgba(106, 42, 151, 0.2);
 }
