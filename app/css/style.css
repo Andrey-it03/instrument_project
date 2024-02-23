@@ -2156,41 +2156,6 @@ button {
   margin-right: 15px;
 }
 
-.filter__aside .filter__aside-item {
-  background-color: #212526;
-  width: 300px;
-  border: none;
-  border-bottom: 1px solid #D9D9D9;
-  transition: 0.3s;
-}
-.filter__aside .filter__aside-item:hover {
-  background-color: #F05A00;
-}
-.filter__aside .filter__aside-title {
-  margin: 0;
-  color: #fff;
-  padding: 22px 10px;
-  position: relative;
-  transition: 0.3s;
-}
-.filter__aside .filter__aside-title::after {
-  content: "";
-  position: absolute;
-  background-image: url("../images/icon/filter-aside-arrow.svg");
-  width: 9px;
-  height: 16px;
-  top: 26px;
-  right: 30px;
-}
-
-.filter__aside-main {
-  margin-top: 30px;
-}
-
-.filter__inner-aside {
-  background-color: transparent;
-}
-
 .filter__product-list {
   display: flex;
   justify-content: space-between;
@@ -2591,6 +2556,7 @@ button {
 
 .contact__map--active {
   display: initial;
+  box-shadow: 0px 5px 10px 3px rgba(1, 7, 12, 0.2);
 }
 
 .contact__inner {
@@ -2637,4 +2603,76 @@ button {
 .contact__tab--active .contact__phone {
   color: #000;
   font-weight: 700;
+}
+
+.filter__aside {
+  margin-right: 30px;
+}
+
+.filter__aside-item__link {
+  width: 310px;
+  height: 69px;
+  background-color: #000;
+  color: #fff;
+  border-bottom: 1px solid #DEDBDB;
+  transition: 0.3s;
+  position: relative;
+}
+.filter__aside-item__link p {
+  padding-left: 20px;
+}
+.filter__aside-item__link:hover {
+  background-color: #F05A00;
+}
+.filter__aside-item__link:after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icon/filter-aside-arrow.svg");
+  width: 10px;
+  height: 17px;
+  top: 25px;
+  right: 25px;
+}
+
+.filter__tab-content {
+  display: none;
+}
+
+.filter__tab-content--active {
+  display: initial;
+}
+
+.aside__tab--active {
+  background-color: #F05A00;
+}
+
+.filter__aside-link,
+.filter__aside-form {
+  width: 310px;
+}
+
+.filter__aside-link {
+  position: relative;
+}
+
+.filter__tab-content--active {
+  position: absolute;
+  top: 0;
+  left: 310px;
+  background-color: #fff;
+  width: 900px;
+  height: 480px;
+  z-index: 100;
+}
+
+.filter__aside-list {
+  padding: 50px;
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-width: 320px;
+  column-width: 320px;
+}
+
+.filter__aside-link {
+  color: #000;
 }

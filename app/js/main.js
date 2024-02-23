@@ -79,9 +79,7 @@ $(function () {
         $('.product__item').addClass('filter__line');
     });
 
-    $('.filter__aside-item').on('click', function () {
-        $('.filter__aside-drop ').toggleClass('filter__aside-drop--active');
-    });
+    
 
     $('.product-one__compare ').on('click', function () { // при нажатии
         $(this).toggleClass('product-one__compare--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
@@ -100,12 +98,23 @@ $(function () {
         e.preventDefault(); //отключение ссылок
 
         $('.contact__tab').removeClass('contact__tab--active'); // удаление 2 класса
+
         $('.contact__map ').removeClass('contact__map--active');
         
         $(this).addClass('contact__tab--active'); // добавление класса при клике
         $($(this).attr('href')).addClass('contact__map--active'); // добавление класса по id
     });
 
+    $('.aside__tab').on('click', function (e) {
+        e.preventDefault(); //отключение ссылок
+
+        $('.aside__tab').removeClass('aside__tab--active'); // удаление 2 класса
+       
+        $('.filter__tab-content ').removeClass('filter__tab-content--active');
+        
+        $(this).addClass('aside__tab--active'); // добавление класса при клике
+        $($(this).attr('href')).addClass('filter__tab-content--active'); // добавление класса по id
+    });
    
 
 });
