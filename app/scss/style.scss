@@ -480,7 +480,7 @@
     line-height: 16px;
     color: #000;
     width: 300px;
-    
+
 }
 
 .product__price {
@@ -1299,20 +1299,50 @@
 .product__one-line {
     column-count: 2;
     columns: 2 300px;
-    
+
 }
 
 .product__one-list {
     display: flex;
     justify-content: space-between;
     width: 330px;
-    & p{
-        margin:5px 0;
+
+    & p {
+        margin: 5px 0;
     }
 }
-.product__one-span{
+
+.product__one-span {
     font-weight: 700;
 }
-.similar, .buywiththis{
+
+.similar,
+.buywiththis {
     margin-bottom: 100px;
+}
+
+.brend__title {
+    color: #000;
+}
+
+.brends__inner {
+    margin: 40px 0 80px;
+}
+.brends__item {
+    max-width: 320px;
+    max-height: 160px;
+    background-color: #fff;
+    border: 2px solid $background-white;
+    transition: 0.3s;
+    &:hover{
+        transform:scale(1.1);
+    }
+}
+.brends__inner{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.brends__item img {
+    padding: 40px 60px;
 }

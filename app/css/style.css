@@ -2538,6 +2538,36 @@ button {
   font-weight: 700;
 }
 
-.similar, .buywiththis {
+.similar,
+.buywiththis {
   margin-bottom: 100px;
+}
+
+.brend__title {
+  color: #000;
+}
+
+.brends__inner {
+  margin: 40px 0 80px;
+}
+
+.brends__item {
+  max-width: 320px;
+  max-height: 160px;
+  background-color: #fff;
+  border: 2px solid #F2F5F7;
+  transition: 0.3s;
+}
+.brends__item:hover {
+  transform: scale(1.1);
+}
+
+.brends__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brends__item img {
+  padding: 40px 60px;
 }
