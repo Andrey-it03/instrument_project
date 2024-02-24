@@ -134,5 +134,7 @@ $(function () {
     });
 
 
+    $('.filter-style').styler();
+
 });
 

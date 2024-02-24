@@ -900,11 +900,13 @@
 
 
 .filter__product-list {
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    justify-content:space-between;
+    align-content: flex-start;
     flex-wrap: wrap;
     max-width: 970px;
     width: 100%;
+   
 }
 
 .filter__btn-span {
@@ -929,6 +931,12 @@
 
 .select::-ms-expand {
     display: none;
+}
+.filter__option {
+    color: $accent;
+  }
+  option:not(:checked) {
+  color: black;
 }
 
 .filter-button img {
@@ -1403,9 +1411,10 @@
         background-color: $accent;
     }
 
-   
+
 }
-.aside__tab::after{
+
+.aside__tab::after {
     content: '';
     position: absolute;
     background-image: url('../images/icon/filter-aside-arrow.svg');
@@ -1531,15 +1540,19 @@
     padding: 20px;
     margin: 0;
 }
+
 .aside__chice-list {
     border-bottom: 1px solid $background-white;
 }
-.aside__chice-price{
-    padding:10px 0;
+
+.aside__chice-price {
+    padding: 10px 0;
 }
-.irs--flat{
-    height:60px;
+
+.irs--flat {
+    height: 60px;
 }
+
 .irs--flat .irs-handle {
     top: 20px;
     width: 13px;
@@ -1547,6 +1560,7 @@
     background-color: #F05A00;
     border-radius: 50%;
 }
+
 .irs--flat .irs-line {
     top: 25px;
     height: 2px;
@@ -1557,37 +1571,146 @@
 .irs--flat .irs-bar {
     top: 25px;
     height: 3px;
-    background-color:#F05A00;
+    background-color: #F05A00;
 }
-.irs--flat .irs-handle > i:first-child, .irs--flat .irs-handle.state_hover > i:first-child, .irs--flat .irs-handle:hover > i:first-child {
+
+.irs--flat .irs-handle>i:first-child,
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
     background-color: transparent;
 }
-.irs--flat .irs-min{
+
+.irs--flat .irs-min {
     top: 40px;
     visibility: visible !important;
-    height:20px;
+    height: 20px;
     color: #000;
-    font-size:14px;
+    font-size: 14px;
+    margin-left: 5px;
 }
+
 .irs-min::before {
     content: "от";
     padding-right: 5px;
-    color:#8A8A8A;
+    color: #8A8A8A;
 }
-.irs--flat .irs-max{
+
+.irs--flat .irs-max {
     top: 40px;
     height: 20px;
     visibility: visible !important;
-    font-size:14px;
+    font-size: 14px;
     color: #000;
+    margin-right: 5px;
 }
+
 .irs-max::before {
     content: "до";
     padding-right: 5px;
-    color:#8A8A8A;
+    color: #8A8A8A;
 }
-.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
-    font-size:13px;
-    background-color:#F05A00;
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    font-size: 13px;
+    background-color: #F05A00;
     color: #000;
+}
+
+.aside-chice,
+.aside__chice-price {
+    background-color: #fff;
+}
+
+.aside__input-title {
+    color: #fff;
+}
+
+.aside__chice-label {
+    padding: 5px 0 5px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.aside__chice-brend {
+    height: 200px;
+    overflow: auto;
+}
+
+.aside__chice-brend::-webkit-scrollbar {
+    width: 8px;
+    background: hsl(0, 0%, 94%);
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 4px #ccc;
+}
+
+.aside__chice-brend::-webkit-scrollbar-thumb {
+    background-color: $accent;
+    border-radius: 30px;
+    position: relative;
+}
+
+.jq-checkbox,
+.jq-radio {
+    background: #fff;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $accent;
+    border-radius: 1px;
+    box-shadow: none;
+    margin: 0 15px 0 0;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+    background: $accent;
+    border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+    width: 8px;
+    height: 6px;
+    margin: 4px 0 0 3px;
+    border-bottom: none;
+    border-left: none;
+
+
+}
+
+.jq-radio.checked .jq-radio__div {
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.aside__chice-delivery {
+    height: 120px;
+}
+
+.jq-radio {
+    background: #fff;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $accent;
+    border-radius: 50%;
+    box-shadow: none;
+    margin: 0 15px 0 0;
+}
+
+.aside__search {
+    width: 270px;
+    margin: 10px 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s;
+    &:hover{
+        background-color: $accent;
+    }
 }
