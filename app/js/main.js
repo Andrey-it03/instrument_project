@@ -79,7 +79,20 @@ $(function () {
         $('.product__item').addClass('filter__line');
     });
 
-    
+
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 100000,
+    });
+    $('.aside__chice-drop').on('click', function () {
+        $(this).toggleClass('aside__chice-drop--active');
+        $(this).next().slideToggle('300');
+    });
+
+
+
 
     $('.product-one__compare ').on('click', function () { // при нажатии
         $(this).toggleClass('product-one__compare--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
@@ -100,7 +113,7 @@ $(function () {
         $('.contact__tab').removeClass('contact__tab--active'); // удаление 2 класса
 
         $('.contact__map ').removeClass('contact__map--active');
-        
+
         $(this).addClass('contact__tab--active'); // добавление класса при клике
         $($(this).attr('href')).addClass('contact__map--active'); // добавление класса по id
     });
@@ -109,13 +122,17 @@ $(function () {
         e.preventDefault(); //отключение ссылок
 
         $('.aside__tab').removeClass('aside__tab--active'); // удаление 2 класса
-       
+
         $('.filter__tab-content ').removeClass('filter__tab-content--active');
-        
+
+        $('.aside__tab').toggleClass('aside__tab--delete'); // удаление 2 класса
+        $('.filter__tab-content ').toggleClass('filter__tab-content--delete');
+
+
         $(this).addClass('aside__tab--active'); // добавление класса при клике
         $($(this).attr('href')).addClass('filter__tab-content--active'); // добавление класса по id
     });
-   
+
 
 });
 
