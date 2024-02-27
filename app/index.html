@@ -29,14 +29,14 @@
                         <div class="header__telephon-tell">
                             <a class="header__phone" href="tel:74951203214">+7 495 120 32 14</a>
                         </div>
-                        <div class="header__telephon-tell">
+                        <!-- <div class="header__telephon-tell">
                             <a class="header__phone" href="tel:74951203214">+7 495 120 32 14</a>
-                        </div>
-                        <!-- <div class="header__telephon-call">
-                            <a class="header__phone-text" href="#">Заказать звонок</a>
                         </div> -->
+                        <div class="header__telephon-call">
+                            <a class="header__phone-text" data-fancybox data-src="#call">Заказать звонок</a>
+                        </div>
                     </div>
-                    <div class="header__entrance">
+                    <!-- <div class="header__entrance">
                         <div class="header__register">
                             <a class="header__register-link" href="#">
                                 Регистрация
@@ -47,7 +47,7 @@
                                 Вход
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="header__user">
                         <ul class="header__user-list">
                             <li class="header__user-item">
@@ -1095,6 +1095,30 @@
             </div>
         </div>
     </footer>
+
+    <div id="call">
+        <div class="call__wrapper">
+            <h2 class="call__title">
+                Заказать звонок
+            </h2>
+            <form class="call__wrapper-form">
+                <label class="call__label-name">
+                    Имя
+                    <input type="text" required>
+                </label>
+                <label class="call__label-number">
+                    Телефон
+                    <input type="text" required placeholder="+7">
+                </label>
+                <label class="call__label-text">
+                    Коментарий
+                    <textarea name="story" id="" cols="28" rows="12"></textarea>
+                </label>
+                <button class="call__button" type="submit">Отправить</button>
+                <a href="#"><span>Нажимая на кнопку вы соглашаетесь</span> на обработку ваших персональных данных</a>
+            </form>
+        </div>
+    </div>
 
 
 
