@@ -15,6 +15,15 @@ $(function () {
         draggable: false,
     });
 
+    $('.tab').on('click', function (e) {
+        e.preventDefault(); //отключение ссылок
+
+        $('.tab').removeClass('tab--active'); // удаление 2 класса
+        $('.tabs-content').removeClass('tabs-content--active');
+
+        $(this).addClass('tab--active'); // добавление класса при клике
+        $($(this).attr('href')).addClass('tabs-content--active'); // добавление класса по id
+    });
 
     $('.product__inner-slider').slick({
         slidesToShow: 4,
@@ -43,15 +52,15 @@ $(function () {
         $(this).toggleClass('product__cart--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
     });
 
-    $('.tab').on('click', function (e) {
-        e.preventDefault(); //отключение ссылок
+    // $('.tab').on('click', function (e) {
+    //     e.preventDefault(); //отключение ссылок
 
-        $('.tab').removeClass('tab--active'); // удаление 2 класса
-        $('.tabs-content').removeClass('tabs-content--active');
+    //     $('.tab').removeClass('tab--active'); // удаление 2 класса
+    //     $('.tabs-content').removeClass('tabs-content--active');
 
-        $(this).addClass('tab--active'); // добавление класса при клике
-        $($(this).attr('href')).addClass('tabs-content--active'); // добавление класса по id
-    });
+    //     $(this).addClass('tab--active'); // добавление класса при клике
+    //     $($(this).attr('href')).addClass('tabs-content--active'); // добавление класса по id
+    // });
 
     $('.product__tab').on('click', function (e) {
         e.preventDefault(); //отключение ссылок
@@ -133,8 +142,11 @@ $(function () {
         $($(this).attr('href')).addClass('filter__tab-content--active'); // добавление класса по id
     });
 
-
     $('.filter-style').styler();
+
+    $('.header__menu-catalog').on('click', function () { // при нажатии
+        $(this).toggleClass('header__menu-catalog--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
+    });
 
 });
 

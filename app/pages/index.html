@@ -33,7 +33,8 @@
                             <a class="header__phone" href="tel:74951203214">+7 495 120 32 14</a>
                         </div> -->
                         <div class="header__telephon-call">
-                            <a class="header__phone-text" data-fancybox data-src="#call">Заказать звонок</a>
+                            <a class="header__phone-text" data-fancybox data-src="#call">Заказать
+                                звонок</a>
                         </div>
                     </div>
                     <!-- <div class="header__entrance">
@@ -63,7 +64,7 @@
                                 </a>
                             </li>
                             <li class="header__user-item">
-                                <a class="heder__user-link" href="#">
+                                <a class="heder__user-link" data-fancybox data-src="#account">
                                     <img src="../images/icon/account.svg" alt="">
                                 </a>
                             </li>
@@ -81,8 +82,62 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header__menu">
-                    <div class="header__menu-catalog">
-                        Каталог товаров
+                    <div class="header__menu-catalog  ">
+                        <p>Каталог товаров</p>
+                        <div class="header__menu-drop ">
+                            <div class="header__menu-item ">
+                                <p class="header__menu-product">Малярные товары</p>
+                                <div class="header__menu-content">
+                                    <ul class="header__menu-list">
+                                        <li>
+                                            <a href="#">Садово огородный инвентарь</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Поливочный инвентарь</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__menu-item ">
+                                <p class="header__menu-product">Электроинструмент</p>
+                                <div class="header__menu-content">
+                                    <ul class="header__menu-list">
+                                        <li>
+                                            <a href="#">Поливочный инвентарь</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Садово огородный инвентарь</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__menu-item ">
+                                <p class="header__menu-product">Спецодежда</p>
+                                <div class="header__menu-content">
+                                    <ul class="header__menu-list">
+                                        <li>
+                                            <a href="#">Садово огородный инвентарь</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Поливочный инвентарь</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__menu-item ">
+                                <p class="header__menu-product">Сезонное</p>
+                                <div class="header__menu-content">
+                                    <ul class="header__menu-list">
+                                        <li>
+                                            <a href="#">Садово огородный инвентарь</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Поливочный инвентарь</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <nuv class="menu">
                         <ul class="menu__list">
@@ -1000,7 +1055,29 @@
         </div>
     </section>
 
-
+    <div id="call" style="display:none">
+        <div class="call__wrapper">
+            <h2 class="call__title">
+                Заказать звонок
+            </h2>
+            <form class="call__wrapper-form">
+                <label class="call__label-name">
+                    Имя
+                    <input type="text" required>
+                </label>
+                <label class="call__label-number">
+                    Телефон
+                    <input type="text" required placeholder="+7">
+                </label>
+                <label class="call__label-text">
+                    Коментарий
+                    <textarea name="story" id="" cols="28" rows="12"></textarea>
+                </label>
+                <button class="call__button" type="submit">Отправить</button>
+                <a href="#"><span>Нажимая на кнопку вы соглашаетесь</span> на обработку ваших персональных данных</a>
+            </form>
+        </div>
+    </div>
 
 
     <footer class="footer">
@@ -1096,7 +1173,7 @@
         </div>
     </footer>
 
-    <div id="call">
+    <div id="call" style="display:none">
         <div class="call__wrapper">
             <h2 class="call__title">
                 Заказать звонок
@@ -1115,10 +1192,37 @@
                     <textarea name="story" id="" cols="28" rows="12"></textarea>
                 </label>
                 <button class="call__button" type="submit">Отправить</button>
-                <a href="#"><span>Нажимая на кнопку вы соглашаетесь</span> на обработку ваших персональных данных</a>
+                <a class="call__phone-link" href="#"><span>Нажимая на кнопку вы соглашаетесь</span> на обработку ваших
+                    персональных данных</a>
             </form>
         </div>
     </div>
+
+    <div id="account" style="display:none">
+        <div class="account__wrapper">
+            <h2 class="call__title">
+                Вход
+            </h2>
+            <form class="account__wrapper-form">
+                <label class="account__label-name">
+                    Телефон
+                    <input type="text" required placeholder="+7">
+                </label>
+                <label class="account__label-number">
+                    Пароль
+                    <input type="text" required>
+                </label>
+                <button class="call__button account__button" type="submit">Войти</button>
+                <a href="#" class="account__registration">
+                    Пройти регистрацию?
+                </a>
+                <a class="account__politica-link" href="#"><span>Нажимая на кнопку вы соглашаетесь</span> на обработку
+                    ваших
+                    персональных данных</a>
+            </form>
+        </div>
+    </div>
+
 
 
 
