@@ -61,6 +61,7 @@
     position: relative;
 }
 
+
 .cart__num {
     position: absolute;
     color: #fff;
@@ -81,6 +82,7 @@
     padding: 25px 28px;
     transition: 0.3s;
 }
+
 
 .header__user-item:hover {
     background: $accent;
@@ -2034,8 +2036,8 @@ option:not(:checked) {
     color: #000;
 }
 
-.account__wrapper {
-    max-width: 442px;
+#account {
+    width: 442px;
 }
 
 .account__button {
@@ -2061,3 +2063,127 @@ option:not(:checked) {
         color: $accent;
     }
 }
+
+#registration {
+    width: 622px;
+}
+
+.account__wrapper-form {
+    max-width: 360px;
+}
+
+.registration__btn {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.personal__tab-content {
+    display: none;
+}
+
+.personal__tab-content--active {
+    display: initial;
+}
+
+.personal__area {
+    margin-bottom: 100px;
+}
+
+.personal__area-wrapper {
+    display: flex;
+}
+
+.personal__tab {
+    max-width: 970px;
+    width: 100%;
+}
+
+.personal__area-aside {
+    max-width: 310px;
+    margin-right: 30px;
+    overflow: auto;
+
+}
+
+.perosnal__area-tab {
+    width: 310px;
+    height: 69px;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 1px solid #DEDBDB;
+    transition: 0.3s;
+
+    & a {
+        display: inline-block;
+    }
+
+    & p {
+        padding-left: 20px;
+        transition: 0.3s;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+
+.personal__area-tab--active p {
+    color: $accent;
+}
+
+.personal__tab-content__item {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.personal__tab-number {
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+.personal__tab-date {
+    margin-right: 50px;
+    display: flex;
+
+    & span {
+        margin-right: 20px;
+    }
+}
+
+.personal__tab-create {
+    margin-right: 80px;
+}
+.personal__tab-content__item{
+    position: relative;
+}
+.personal__tab-drop{
+    position: absolute;
+    height: 400px;
+    max-width: 970px;
+    width: 100%;
+    background-color: #fff;
+    top: 62px;
+    padding: 20px 50px;
+    overflow: auto;
+}
+
+.personal__tab-item{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    margin-bottom: 10px;
+}
+.personal__tab-drop-bottom{
+    border-top: 2px solid #000;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
