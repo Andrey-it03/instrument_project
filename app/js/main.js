@@ -159,20 +159,13 @@ $(function () {
         $($(this).attr('href')).addClass('personal__tab-content--active'); // добавление класса по id
     });
 
-    $('.personal__tab-drop').on('click', function () { // при нажатии
-        $(this).toggleClass('personal__tab-drop--active') // toggleClass значит что при нажатии класс изменяется, а при еще одном нажатии убирается.
-    });
+    // $('.personal__tab-content__item  ').on('click', function () { // при нажатии
+    //     $('.personal__tab-drop').addClass('personal__tab-drop--active')
+
+    // });
 
 
-    $('.personal__tab-content').on('click', function (e) {
-        e.preventDefault(); //отключение ссылок
 
-        $('.personal__tab-content').removeClass('personal__tab-content--active'); // удаление 2 класса
 
-        $('.contact__map ').removeClass('contact__map--active');
-
-        $(this).addClass('contact__tab--active'); // добавление класса при клике
-        $($(this).attr('href')).addClass('contact__map--active'); // добавление класса по id
-    });
 });
 

@@ -4936,11 +4936,12 @@ option:not(:checked) {
 }
 
 .personal__area {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .personal__area-wrapper {
   display: flex;
+  margin-bottom: 100px;
 }
 
 .personal__tab {
@@ -4979,11 +4980,8 @@ option:not(:checked) {
 
 .personal__tab-content__item {
   background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 4px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .personal__tab-number {
@@ -5003,12 +5001,7 @@ option:not(:checked) {
   margin-right: 80px;
 }
 
-.personal__tab-content__item {
-  position: relative;
-}
-
 .personal__tab-drop {
-  position: absolute;
   height: 400px;
   max-width: 970px;
   width: 100%;
@@ -5033,4 +5026,112 @@ option:not(:checked) {
   align-items: center;
   padding-top: 20px;
   font-weight: 700;
+}
+
+.personal__tab-content__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.personal__date-main-label {
+  font-size: 14px;
+  color: #8A8A8A;
+  font-weight: 700;
+}
+
+.personal__date-main {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+
+.personal__date-main__form {
+  max-width: 300px;
+  width: 100%;
+}
+
+.personal__date-main-label input {
+  padding-top: 5px;
+  display: block;
+  border: none;
+  font-size: 20px;
+  color: #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.personal__date-inner {
+  padding-top: 10px;
+  padding-left: 45px;
+  padding-bottom: 50px;
+}
+
+.label-home input {
+  max-width: 100px;
+  width: 100%;
+}
+
+.personal__date-btn {
+  margin-top: 20px;
+  border: none;
+  background-color: #212526;
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.personal__date-btn:hover {
+  background-color: #F05A00;
+}
+
+.personal__tab-drop::-webkit-scrollbar {
+  width: 8px;
+  background: hsl(0, 0%, 94%);
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 4px #ccc;
+}
+
+.personal__tab-drop::-webkit-scrollbar-thumb {
+  background-color: #F05A00;
+  border-radius: 30px;
+  position: relative;
+}
+
+.header__user-item--active {
+  background-color: #F05A00;
+}
+
+.personal__tab-color {
+  background-color: #fff;
+}
+
+.personal__advertising {
+  margin-top: 20px;
+  position: relative;
+}
+
+.personal__advertising-text {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #fff;
+}
+
+.personal__advertising p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.personal__advertising-text-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.personal__advertising-img {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
