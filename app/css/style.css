@@ -3806,6 +3806,7 @@ textarea {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
+  position: relative;
 }
 
 .filter__inner {
@@ -3837,6 +3838,7 @@ textarea {
   flex-wrap: wrap;
   max-width: 970px;
   width: 100%;
+  position: relative;
 }
 
 .filter__btn-span {
@@ -4303,7 +4305,6 @@ option:not(:checked) {
   color: #fff;
   border-bottom: 1px solid #DEDBDB;
   transition: 0.3s;
-  position: relative;
 }
 .filter__aside-item__link p {
   padding-left: 20px;
@@ -4595,7 +4596,7 @@ option:not(:checked) {
 
 .aside__search {
   width: 270px;
-  margin: 10px 20px;
+  margin: 20px 20px;
   padding: 10px;
   background-color: #000;
   color: #fff;
@@ -4781,25 +4782,42 @@ option:not(:checked) {
   color: #8A8A8A;
 }
 
-.aside__test {
-  display: relative;
-}
-.aside__test .aside__content-test {
-  position: absolute;
-  background-color: #fff;
-  width: 900px;
-  height: 480px;
-  top: -138px;
-  left: 310px;
-  z-index: 99;
-  visibility: hidden;
-  opacity: 0;
+.filter__aside-form {
+  position: relative;
 }
 
-.aside__test:hover .aside__content-test {
-  visibility: visible;
-  opacity: 1;
+.aside__approved::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 9px;
+  height: 16px;
+  z-index: 99;
+}
+
+.aside__content-test {
+  position: absolute;
+  top: 0;
+  left: 310px;
+  width: 800px;
+  height: 450px;
+  background-color: #fff;
   color: #000;
+  z-index: 99;
+  display: none;
+}
+
+.aside__approved:hover .aside__content-test {
+  display: initial;
+}
+
+.aside__content-list {
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-width: 320px;
+  column-width: 320px;
+  padding: 50px;
 }
 
 .header__menu-catalog p,
@@ -4824,6 +4842,7 @@ option:not(:checked) {
   top: 70px;
   left: 0;
   display: none;
+  transition: 0.3s;
 }
 
 .header__menu-catalog--active {
@@ -4861,7 +4880,7 @@ option:not(:checked) {
   position: absolute;
   top: 0;
   left: 310px;
-  width: 900px;
+  width: 800px;
   height: 450px;
   background-color: #fff;
   z-index: 99;
@@ -4869,7 +4888,7 @@ option:not(:checked) {
 }
 
 .header__menu-item:hover {
-  background-color: #F2F5F7;
+  background-color: #F05A00;
 }
 .header__menu-item:hover .header__menu-content {
   display: initial;
@@ -4885,6 +4904,10 @@ option:not(:checked) {
 
 .header__menu-list a {
   color: #000;
+  transition: 0.3s;
+}
+.header__menu-list a:hover {
+  color: #F05A00;
 }
 
 #account {
@@ -5134,4 +5157,219 @@ option:not(:checked) {
 .personal__advertising-img {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.cart__num--active {
+  background-color: #212526;
+}
+
+.basket {
+  margin-bottom: 100px;
+}
+
+.basket__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basket__top-link {
+  color: #000;
+  border: 1px solid #000;
+  padding: 12px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.basket__top-link:hover {
+  background-color: #F05A00;
+  border: 1px solid #F05A00;
+}
+
+.basket__table-list {
+  margin-top: 30px;
+  display: flex;
+  font-weight: 700;
+}
+
+.basket__table-name,
+.basket__product-info {
+  max-width: 530px;
+  width: 100%;
+}
+
+.basket__table-price,
+.basket__product-price {
+  max-width: 250px;
+  width: 100%;
+}
+
+.basket__product-price {
+  padding-left: 25px;
+  position: relative;
+}
+
+.basket__price-old {
+  position: absolute;
+  top: -20px;
+  left: 70px;
+}
+
+.basket__table-quanity,
+.basket__product-quanity {
+  max-width: 320px;
+  width: 100%;
+}
+
+.basket__product-quanity {
+  padding-left: 35px;
+}
+
+.basket__product-count {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 3px;
+  position: relative;
+}
+
+.basket__product-minus {
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  background-image: url("../images/icon/basket-minus.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  left: -27px;
+  top: 6px;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+.basket__product-minus:hover {
+  opacity: 1;
+}
+
+.basket__product-plus {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icon/basket-plus.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  top: 6px;
+  right: -29px;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+.basket__product-plus:hover {
+  opacity: 1;
+}
+
+.basket__product {
+  margin-top: 45px;
+}
+
+.basket__product-item {
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  transition: 0.3s;
+  margin-bottom: 5px;
+}
+.basket__product-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 5px 10px 3px rgba(34, 60, 80, 0.2);
+}
+
+.basket__product-title p {
+  margin: 0;
+}
+
+.basket__product-info {
+  display: flex;
+}
+
+.basket__product-img {
+  margin-left: 40px;
+  background-repeat: no-repeat;
+  width: 60px;
+}
+
+.basket__product-title {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.filter__aside-arrow {
+  position: relative;
+}
+
+.filter__aside-arrow:after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 16px;
+  background-image: url("../images/icon/filter-aside-arrow.svg");
+  top: 6px;
+  right: 20px;
+}
+
+.basket__product-category {
+  font-size: 14px;
+  color: #8A8A8A;
+}
+
+.delet__product {
+  border: none;
+  background-color: transparent;
+  padding-left: 60px;
+  width: 20px;
+  height: 24px;
+}
+
+.basket__total-price {
+  margin-top: 30px;
+  max-width: 305px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.basket__standart-position {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #DEDBDB;
+  padding-top: 15px;
+}
+
+.basket__total-sum {
+  font-weight: 700;
+}
+
+.basket__total-topay {
+  padding: 30px 0;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.basket__total-topay__price {
+  color: #F05A00;
+}
+
+.basket__total-decor {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 15px 20px;
+  background-color: #212526;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.basket__total-decor:hover {
+  background-color: #F05A00;
 }

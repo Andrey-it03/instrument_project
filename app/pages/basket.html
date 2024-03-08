@@ -52,10 +52,10 @@
                                     <img src="../images/icon/account.svg" alt="">
                                 </a>
                             </li>
-                            <li class="header__user-item">
+                            <li class="header__user-item header__user-item--active">
                                 <a class="heder__user-link" href="#">
                                     <img src="../images/icon/cart.svg" alt="">
-                                    <div class="cart__num">1</div>
+                                    <div class="cart__num cart__num--active">1</div>
                                 </a>
                             </li>
                         </ul>
@@ -135,7 +135,7 @@
                             <li class="menu__item">
                                 <a class="menu__link" href="#">Хиты сезона</a>
                             </li>
-                            <li class="menu__item">
+                            <li class="menu__item ">
                                 <a class="menu__link" href="#">Новинки</a>
                             </li>
                         </ul>
@@ -177,115 +177,124 @@
                 </li>
                 <li class="breadcrumbs__list-item">
                     <a class="breadcrumbs__list-link" href="#">
-                        Каталог
+                        Корзина
                     </a>
                 </li>
             </ul>
         </div>
     </div>
 
-    <section class="catalog">
+    <section class="basket">
         <div class="container">
-            <h2 class="catalog__title">
-                Каталог
-            </h2>
-            <div class="catalog__inner">
-                <div class="catalog__chapter">
-                    <div class="catalog__chapter-item">
-                        <a class="catalog__chapter-link" href="#">Малярные товары</a>
-                    </div>
-                    <div class="catalog__chapter-item">
-                        <a class="catalog__chapter-link" href="#">Малярные товары</a>
-                    </div>
-                    <div class="catalog__chapter-item">
-                        <a class="catalog__chapter-link" href="#">Малярные товары</a>
-                    </div>
-                    <div class="catalog__chapter-item">
-                        <a class="catalog__chapter-link" href="#">Малярные товары</a>
-                    </div>
-                    <div class="catalog__chapter-item">
-                        <a class="catalog__chapter-link" href="#">Малярные товары</a>
-                    </div>
-                    <div class="catalog__chapter-item">
-                        <a class="catalog__chapter-link" href="#">Малярные товары</a>
-                    </div>
-                </div>
-
-                <div class="catalog__product-inner">
-
-                    <div class="catalog__inner-items">
-                        <div class="catalog__product-item">
-                            <a class="catalog__product-link" href="#">
-                                <img class="catalog__product-img" src="../images/catalog/1.png" alt="">
-                                <div class="catalog__product-subtitle">
-                                    <p>Поливочный инвентарь</p>
-                                </div>
+            <div class="basket__top">
+                <h2 class="filter__title">
+                    Корзина
+                </h2>
+                <a href="#" class="basket__top-link">
+                    Продолжить покупки
+                </a>
+            </div>
+            <div class="basket__table">
+                <ul class="basket__table-list">
+                    <li class="basket__table-name">Название</li>
+                    <li class="basket__table-price">Стоимость</li>
+                    <li class="basket__table-quanity">Количество</li>
+                    <li>Итого</li>
+                </ul>
+            </div>
+            <div class="basket__product">
+                <div class="basket__product-item">
+                    <div class="basket__product-info">
+                        <img class="basket__product-img" src="../images/product/personal-area.png" alt="">
+                        <div class="basket__product-title">
+                            <a href="#">
+                                <p class="basket__product-category">Краски и эмали</p>
                             </a>
-                        </div>
-                        <div class="catalog__product-item">
-                            <img class="catalog__product-img" src="../images/catalog/2.png" alt="">
-                            <div class="catalog__product-subtitle">
-                                <p>Поливочный инвентарь</p>
-                            </div>
-                        </div>
-
-                        <div class="catalog__product-item">
-                            <img class="catalog__product-img" src="../images/catalog/1.png" alt="">
-                            <div class="catalog__product-subtitle">
-                                <p>Поливочный инвентарь</p>
-                            </div>
-                        </div>
-
-                        <div class="catalog__product-item">
-                            <img class="catalog__product-img" src="../images/catalog/1.png" alt="">
-                            <div class="catalog__product-subtitle">
-                                <p>Поливочный инвентарь</p>
-                            </div>
+                            <p>
+                                Эмаль Condor ПФ-115
+                            </p>
                         </div>
                     </div>
-                    
-
-                    <div class="pagination">
-                        <ul class="pagination-list">
-                            <li class="pagination-list__item pagination-list__item--active">
-                                <a href="#">
-                                    1
-                                </a>
-                            </li>
-                            <li class="pagination-list__item">
-                                <a href="#">
-                                    2
-                                </a>
-                            </li>
-                            <li class="pagination-list__item">
-                                <a href="#">
-                                    3
-                                </a>
-                            </li>
-                            <li class="pagination-list__item">
-                                <a href="#">
-                                    4
-                                </a>
-                            </li>
-                            <li class="pagination-list__item">
-                                <a href="#">
-                                    5
-                                </a>
-                            </li>
-                            <li class="pagination-list__item pagination-list__item-dots">
-                                <a href="#">
-                                    <span>...</span>
-                                </a>
-                            </li>
-                            <li class="pagination-list__item">
-                                <a href="#">
-                                    11
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="basket__product-price">
+                        500 ₽
+                        <div class="product__price-old basket__price-old">
+                            720₽
+                        </div>
                     </div>
-
+                    <div class="basket__product-quanity">
+                        <span class="basket__product-count">3
+                            <button class="basket__product-minus"></button>
+                            <button class="basket__product-plus"></button>
+                        </span>
+                    </div>
+                    <div class="basket__product-result">
+                        1 000 ₽
+                    </div>
+                    <button class="delet__product">
+                        <img src="../images/icon/delet.svg" alt="">
+                    </button>
                 </div>
+
+                <div class="basket__product-item">
+                    <div class="basket__product-info">
+                        <img class="basket__product-img" src="../images/product/personal-area.png" alt="">
+                        <div class="basket__product-title">
+                            <a href="#">
+                                <p class="basket__product-category">Краски и эмали</p>
+                            </a>
+                            <p>
+                                Эмаль Condor ПФ-115
+                            </p>
+                        </div>
+                    </div>
+                    <div class="basket__product-price">
+                        500 ₽
+                        <!-- <div class="product__price-old basket__price-old">
+                            720₽
+                        </div> -->
+                    </div>
+                    <div class="basket__product-quanity">
+                        <span class="basket__product-count">3
+                            <button class="basket__product-minus"></button>
+                            <button class="basket__product-plus"></button>
+                        </span>
+                    </div>
+                    <div class="basket__product-result">
+                        1 000 ₽
+                    </div>
+                    <button class="delet__product">
+                        <img src="../images/icon/delet.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="basket__total-price">
+                <div class="basket__total-sum basket__standart-position">
+                    <div class="basket__total-sum__title">
+                        Сумма
+                    </div>
+                    <div class="basket__total-sum__price">
+                        4 550 ₽
+                    </div>
+                </div>
+                <div class="basket__total-discount basket__standart-position">
+                    <div class="basket__total-discoun__title">
+                        Скидка
+                    </div>
+                    <div class="basket__total-discoubt__price ">
+                        — 250 ₽
+                    </div>
+                </div>
+                <div class="basket__total-topay basket__standart-position">
+                    <div class="basket__total-topay__title">
+                        К оплате
+                    </div>
+                    <div class="basket__total-topay__price">
+                        4 200 ₽
+                    </div>
+                </div>
+                <a class="basket__total-decor" href="#">
+                    Перейти к оформлению
+                </a>
             </div>
         </div>
     </section>
@@ -297,59 +306,60 @@
                 <div class="footer__item">
                     <ul class="footer__list">
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Малярные товары
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Электрооборудование </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Спецодежда </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Для дома и дачи
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Сезонное
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Инструмент
                             </a>
                         </li>
+
                     </ul>
                 </div>
                 <div class="footer__item">
                     <ul class="footer__list">
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 О компании
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Контакты
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Новинки
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Хиты сезона
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#">
+                            <a class="footer__list-link" href="#">
                                 Распродажи
                             </a>
                         </li>
@@ -360,8 +370,8 @@
                         <img class="logo__img" src="../images/logo.png" alt="">
                     </a>
                     <div class="footer__telephon">
-                        <a class="header__phone" href="tel:74951203214">+7 495 120 32 14</a>
-                        <a class="header__phone" href="tel:74951203213">+7 495 120 32 13</a>
+                        <a class="header__phone footer__list-link" href="tel:74951203214">+7 495 120 32 14</a>
+                        <a class="header__phone footer__list-link" href="tel:74951203213">+7 495 120 32 13</a>
                     </div>
                     <ul class="social-list footer__social">
                         <li class="social-list__item footer__social-item">
@@ -375,7 +385,7 @@
                             </a>
                         </li>
                     </ul>
-                    <a class="footer__useragreement">
+                    <a class="footer__useragreement footer__list-link" href="#">
                         Соглашение пользователя
                     </a>
                 </div>
