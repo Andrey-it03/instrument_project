@@ -2539,7 +2539,31 @@ option:not(:checked) {
     background-color: $background;
     transition: 0.3s;
     border-radius: 6px;
-    &:hover{
+
+    &:hover {
         background-color: $accent;
     }
+}
+
+.background-image {
+    & img{
+        min-height: 400px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.about__company-image-right{
+    display:flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.about__company-image img{
+    max-width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about__company-image-text{
+    margin-right: 20px;
 }
