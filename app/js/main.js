@@ -164,7 +164,15 @@ $(function () {
 
     // });
 
+    $('.placing__order-tab').on('click', function (e) {
+        e.preventDefault(); //отключение ссылок
 
+        $('.placing__order-tab').removeClass('placing__order-tab--active'); // удаление 2 класса
+        $('.placing__order-content').removeClass('placing__order-content--active');
+
+        $(this).addClass('placing__order-tab--active'); // добавление класса при клике
+        $($(this).attr('href')).addClass('placing__order-content--active'); // добавление класса по id
+    });
 
 
 });

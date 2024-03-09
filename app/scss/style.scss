@@ -2546,24 +2546,94 @@ option:not(:checked) {
 }
 
 .background-image {
-    & img{
+    & img {
         min-height: 400px;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
-.about__company-image-right{
-    display:flex;
+
+.about__company-image-right {
+    display: flex;
     justify-content: space-between;
     margin: 50px 0;
 }
-.about__company-image img{
+
+.about__company-image img {
     max-width: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.about__company-image-text{
+
+.about__company-image-text {
     margin-right: 20px;
+}
+
+.placing__order-wrapper {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.placing__order-content {
+    display: none;
+}
+
+.placing__order-content--active {
+    display: initial;
+}
+
+.placing__order-filling {
+    padding: 50px;
+}
+
+.placing__order-tab {
+    font-weight: 700;
+    color: #8A8A8A;
+    padding-bottom: 2px;
+}
+
+.placing__order-tabs {
+    margin-bottom: 30px;
+}
+
+.placing__order-tab--active {
+    border-bottom: 1px solid $accent;
+    color: #000;
+}
+
+.placing__order-tab+.placing__order-tab {
+    margin-left: 30px;
+}
+
+.placing__order-price {
+    background-color: #000;
+    width: 420px;
+    height: 252px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.placing__order-list li {
+    margin-bottom: 10px;
+}
+
+.placing__order-itog-price {
+    font-weight: 700;
+    font-size: 30px;
+    color: $accent;
+    padding-bottom: 15px;
+}
+
+.placing__order-itog {
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.placing__order-form{
+    display:flex;
 }
