@@ -194,18 +194,120 @@
                 <div class="placing__order-filling">
                     <div class="placing__order-tabs">
                         <a class="placing__order-tab placing__order-tab--active" href="#date__bay">Данные покупателя</a>
-                        <a class="placing__order-tab" href="#delifery">Доставка</a>
-                        <a class="placing__order-tab" href="#pay">Оплата</a>
+                        <a class="placing__order-tab placing__order-link-link " href="#delifery">Доставка</a>
+                        <a class="placing__order-tab placing__order-link-pay" href="#pay">Оплата</a>
                     </div>
                     <div class="placing__order-tabs-container">
-                        <div id="date__bay" class="placing__order-content placing__order-content--active">
-                           content1
+                        <div id="date__bay" class="placing__order-content    ">
+                            <div class="placing__order-date">
+                                <form class="personal__date-main__form placing__order-rorm">
+                                    <label class="personal__date-main-label">
+                                        Фамилия
+                                        <input type="text">
+                                    </label>
+                                    <label class="personal__date-main-label">
+                                        Телефон
+                                        <input type="text">
+                                    </label>
+                                </form>
+                                <form class="personal__date-main__form">
+                                    <label class="personal__date-main-label">
+                                        Имя
+                                        <input type="text">
+                                    </label>
+                                    <label class="personal__date-main-label">
+                                        Электронная почта
+                                        <input type="text">
+                                    </label>
+                                </form>
+                            </div>
+                            <a class="placing__order-tab placing__order-simpl placing__order-further"
+                                href="#delifery">Далее</a>
                         </div>
-                        <div id="delifery" class="placing__order-content ">
-                            content2
+                        <div id="delifery" class="placing__order-content  ">
+                            <p class="placing__order-content2">
+                                Выберите подходящий вам вариант доставки:
+                            </p>
+                            <div
+                                class="aside__chice-price aside__chice-brend aside__chice-delivery placing__order-radio">
+                                <label class="aside__chice-label">
+                                    <input class="filter-style" type="radio" name="radio" checked>
+                                    Самовывоз
+                                </label>
+                                <label class="aside__chice-label">
+                                    <input class="filter-style" type="radio" name="radio">
+                                    Доставка курьером
+                                </label>
+                            </div>
+                            <p class="placing__order-content2">
+                                Введите адрес доставки
+                            </p>
+                            <div class="personal__date-main">
+                                <form class="personal__date-main__form placing__delifery-form">
+                                    <label class="personal__date-main-label">
+                                        Город
+                                        <input type="text">
+                                    </label>
+                                    <label class="personal__date-main-label">
+                                        Улица
+                                        <input type="text">
+                                    </label>
+                                    <label class="personal__date-main-label">
+                                        Ближайшая дата доставки
+                                        <input type="text">
+                                    </label>
+                                    <label class="personal__date-main-label placing-delifery__price">
+                                        Сумма доставки
+                                        <input type="text">
+                                    </label>
+                                </form>
+                                <form class="personal__date-main__form">
+                                    <label class="personal__date-main-label">
+                                        Корпус
+                                        <input type="text">
+                                    </label>
+                                    <label class="personal__date-main-label label-home ">
+                                        Дом
+                                        <input type="text">
+                                    </label>
+                                    <label class="personal__date-main-label label-home">
+                                        Квартира
+                                        <input type="text">
+                                    </label>
+                                </form>
+                            </div>
+                            <a class="placing__order-tab placing__order-pay placing__order-simpl" href="#pay">Далее</a>
                         </div>
-                        <div id="pay" class="placing__order-content ">
-                            content3
+                        <div id="pay" class="placing__order-content placing__order-content--active">
+                            <p class="placing__order-content2">
+                                Выберите подходящий вам вариант оплаты:
+                            </p>
+                            <div
+                                class="aside__chice-price aside__chice-brend aside__chice-delivery placing__order-radio">
+                                <label class="aside__chice-label">
+                                    <input class="filter-style" type="radio" name="variant-pay" checked>
+                                    Оплата при получении
+                                </label>
+                                <label class="aside__chice-label">
+                                    <input class="filter-style" type="radio" name="variant-pay">
+                                    Оплата онлайн
+                                </label>
+                            </div>
+                            <div
+                            class="aside__chice-price">
+                            <label class="aside__chice-label">
+                                <input class="filter-style" type="radio" name="receiving" checked>
+                                Оплата при получении
+                            </label>
+                            <label class="aside__chice-label">
+                                <input class="filter-style" type="radio" name="receiving">
+                                Оплата онлайн
+                            </label>
+                        </div>
+                            <button class="placing__confirmation">
+                                Подтвердить заказ
+                            </button>
+                            <p class="placing__confirmation-text">Нажимая на кнопку вы соглашаетесь на обработку ваших персональных данных</p>
                         </div>
                     </div>
                 </div>

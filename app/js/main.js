@@ -174,6 +174,18 @@ $(function () {
         $($(this).attr('href')).addClass('placing__order-content--active'); // добавление класса по id
     });
 
+    $('.placing__order-further').on('click', function (e) {
+        e.preventDefault(); //отключение ссылок
 
+        $('.placing__order-link-link').addClass('placing__order-tab--active'); // удаление 2 класса
+       
+    });
+
+    $('.placing__order-pay').on('click', function (e) {
+        e.preventDefault(); //отключение ссылок
+
+        $('.placing__order-link-pay').addClass('placing__order-tab--active'); // удаление 2 класса
+       
+    });
 });
 

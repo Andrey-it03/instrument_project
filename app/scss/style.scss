@@ -2605,7 +2605,7 @@ option:not(:checked) {
 }
 
 .placing__order-tab+.placing__order-tab {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .placing__order-price {
@@ -2634,6 +2634,57 @@ option:not(:checked) {
     font-size: 30px;
     padding-bottom: 15px;
 }
-.placing__order-form{
+.placing__order-rorm{
+    margin-right: 100px;
+}
+.placing__order-date{
     display:flex;
+}
+.placing__order-simpl{
+    margin-top: 20px;
+    font-weight:400;
+    padding: 15px 100px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    &:hover{
+        background-color: $accent;
+    }
+}
+.placing__order-content2{
+    font-weight:700;
+    font-size: 18px;
+}
+.placing__order-radio{
+    display:flex;
+    height: 50px;
+}
+.aside__chice-label{
+    margin-right: 40px;
+}
+.placing__delifery-form{
+    margin-right: 100px;
+}
+.placing-delifery__price{
+    color: #000;
+}
+.placing__confirmation{
+    margin-top: 20px;
+    font-weight:400;
+    padding: 15px 50px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    &:hover{
+        background-color: $accent;
+    }
+}
+.placing__confirmation-text{
+    font-size: 14px;
+    width: 300px;
+    margin:0;
+    line-height: 20px;
 }
