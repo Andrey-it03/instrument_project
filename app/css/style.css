@@ -5525,3 +5525,28 @@ option:not(:checked) {
   margin: 0;
   line-height: 20px;
 }
+
+.paginarion-conteiner {
+  width: 900px;
+}
+
+.pagination__filter-inner {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-aside {
+  max-width: 310px;
+  height: 20px;
+  width: 100%;
+  margin-right: 15px;
+}
+
+.pagination-filter {
+  max-width: 1200px;
+  width: 100;
+}
+
+.pagination__filter-list {
+  justify-content: center;
+}

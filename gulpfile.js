@@ -53,7 +53,7 @@ function fonts() {
         .pipe(dest('app/fonts'))
 }
 
-function pages() {
+function pages() { // переносит из одной папки в другую
     return src('app/pages/*.html')
         .pipe(include({
             includePaths: 'app/components'
@@ -119,23 +119,43 @@ function watching() {
 //     });
 // }
 
+
+
+// function building() {
+//     return src([
+//         'app/css/style.css',
+//         'app/images/*.*',
+//         '!app/images/*.svg',
+//         '!app/images/stack',
+//         'app/images/dist/sprite.svg',
+//         'app/fonts/*.*',
+//         'app/js/main.min.js',
+//         'app/**/*.html'
+//     ], { base: 'app' }) // сохранить структуру при переносе файлов
+//         .pipe(dest('dist'))
+// }
+
 function cleanDist() { // Удаление файлов в папке dist при редактировании
     return src('dist')
         .pipe(clean())
 }
-
-
 function building() {
     return src([
-        'app/css/style.min.css',
-        'app/images/*.*',
-        '!app/images/*.svg',
-        '!app/images/stack',
-        'app/images/dist/sprite.svg',
-        'app/fonts/*.*',
+        'app/**/*.html',
+        'app/css/style.css',
+        'app/js/main.js',
         'app/js/main.min.js',
-        'app/**/*.html'
-    ], { base: 'app' }) // сохранить структуру при переносе файлов
+        'app/fonts/*.*',
+        'app/images/*.*',
+        'app/images/background-images/*.*',
+        'app/images/banner/*.*',
+        'app/images/catalog/*.*',
+        'app/images/icon/*.*',
+        'app/images/news/*.*',
+        'app/images/product/*.*',
+        'app/images/product-one/*.*'
+
+    ], { base: 'app' })
         .pipe(dest('dist'))
 }
 
@@ -146,10 +166,9 @@ exports.scripts = scripts;
 // exports.browsersync = browsersync; 
 exports.images = images;
 exports.sprite = sprite;
-exports.building = building;
 exports.watching = watching;
 exports.fonts = fonts;
 exports.pages = pages;
 exports.build = series(cleanDist, building);              // Последовательное удаление и запись
 
-exports.default = parallel(styles, scripts, images, pages,/*browsersync,*/watching); //Обновление всех файлов одновременно через, команду gulp
+exports.default = parallel(styles, scripts, images, pages , /*browsersync,*/watching); //Обновление всех файлов одновременно через, команду gulp
