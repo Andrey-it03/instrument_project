@@ -1905,7 +1905,7 @@ option:not(:checked) {
     transition: 0.3s;
     width: 310px;
     margin-left: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #fff;
     border: 1px solid $background;
 
@@ -2064,7 +2064,7 @@ option:not(:checked) {
 }
 
 .account__button {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .account__wrapper-form span {
@@ -2072,24 +2072,20 @@ option:not(:checked) {
 }
 
 .account__politica-link {
-    font-size: 12px;
     margin-top: 20px;
-    color: #000;
+    font-size: 14px;
+    color: #0033ff;
 }
 
 .account__registration {
     margin-top: 20px;
-    font-size: 18px;
-    padding-left: 70px;
-
+    font-size: 16px;
+    transition: 0.1s;
     &:hover {
         color: $accent;
     }
 }
 
-#registration {
-    width: 622px;
-}
 
 .account__wrapper-form {
     max-width: 360px;
@@ -2097,7 +2093,7 @@ option:not(:checked) {
 
 .registration__btn {
     margin-left: 25px;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 .personal__tab-content {
@@ -2723,4 +2719,14 @@ option:not(:checked) {
 }
 .pagination__filter-list {
     justify-content: center;
+}
+.block__reverse{
+    display:flex;
+    justify-content: space-between;
+}
+.forgut__password{
+    color: #000;
+}
+.acount__last-input{
+    margin-top:10px;
 }
